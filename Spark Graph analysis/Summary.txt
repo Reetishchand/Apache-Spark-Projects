@@ -1,0 +1,29 @@
+Network was collected by crawling Amazon website. It is based on Customers Who Bought This Item Also Bought feature of the Amazon website. If a product i is frequently co-purchased with product j, the graph contains an undirected edge from i to j. Each product category provided by Amazon defines each ground-truth community.
+
+We regard each connected component in a product category as a separate ground-truth community. We remove the ground-truth communities which have less than 3 nodes. We also provide the top 5,000 communities with highest quality which are described in our paper. As for the network, we provide the largest connected component.
+
+Dataset statistics:
+Nodes =>	334863
+Edges	=> 925872
+Nodes in largest WCC => 	334863 (1.000)
+Edges in largest WCC	=>  925872 (1.000)
+Nodes in largest SCC   => 	334863 (1.000)
+Edges in largest SCC	=>  925872 (1.000)
+Average clustering coefficient  => 	0.3967
+Number of triangles	=>  667129
+Fraction of closed triangles  => 	0.07925
+Diameter (longest shortest path)  => 	44
+90-percentile effective diameter  => 	15
+
+First, indivdual vertices are identified by getting the distinct FromNodeId and ToNodeId and then doing a union on both of them.
+These are the vertices.
+
+Next, the graphs edges are formed with the FromNodeId and ToNodeId
+
+The Graph is formed using vertices and edges - using both GraphX and GraphFrames
+
+OutDegree - indicates the amount of people a person trusts. The top 5 are displayed here.
+InDegree- indicates the amount, a person is trusted. The top 5 are displayed here.
+pagerank - indicates the important trusted people
+connected components - through this, we can approximate clusters and every component is labelled
+triangle count - this indicates a mutual trust sharing relationship.

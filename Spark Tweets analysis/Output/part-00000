@@ -1,0 +1,26 @@
+						     Metrics for Logistic Regression 
+
+ accuracy = 0.7070499657768652
+ recall = 0.7070499657768652
+ score = 0.6777959109238811
+ Confusion Matrix : 
+3376.0  223.0  66.0   
+775.0   345.0  86.0   
+410.0   152.0  411.0  
+ Label wise Data
+ 	 Label :0.0
+ falsePositiveRate= 0.5438274437815511
+ truePositiveRate = 0.9211459754433834
+ precision = 0.7401885551414163
+ 	 Label :1.0
+ falsePositiveRate= 0.08085381630012936
+ truePositiveRate = 0.2860696517412935
+ precision = 0.4791666666666667
+ 	 Label :2.0
+ falsePositiveRate= 0.03120509135701088
+ truePositiveRate = 0.4224049331963001
+ precision = 0.7300177619893428
+
+  precision = 0.6846292500015266
+ falsePositiveRate = 0.3629363172155565
+ truePositiveRate = 0.7070499657768652
